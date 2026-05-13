@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Manuel</title>
+
+<style>
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #ff4d6d, #ff8fa3);
+    font-family: Arial, sans-serif;
+    overflow:hidden;
+  }
+
+  .mensaje{
+    color:white;
+    font-size:4rem;
+    text-align:center;
+    opacity:0;
+    transform: scale(0.5);
+    animation: revelar 2.5s ease-out forwards;
+    text-shadow: 0 0 20px rgba(255,255,255,0.6);
+  }
+
+  @keyframes revelar{
+    0%{
+      opacity:0;
+      transform: scale(0.5);
+      filter: blur(10px);
+    }
+    60%{
+      opacity:1;
+      transform: scale(1.1);
+      filter: blur(0px);
+    }
+    100%{
+      opacity:1;
+      transform: scale(1);
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+  <h1 class="mensaje">Manuel disculpa ❤️</h1>
+
+</body>
+</html>
